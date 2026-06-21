@@ -1,0 +1,5 @@
+# Exclude auto-generated Folium maps and large datasets from language statistics
+*.html linguist-generated=true
+*.parquet linguist-generated=true
+*.cbm linguist-generated=true
+*.txt linguist-generated=true

@@ -28,3 +28,6 @@ venv/
 # CatBoost training logs
 catboost_info/
 archive/catboost_info/
+
+# Build artifacts
+submission.zip
