@@ -1,0 +1,364 @@
+{
+    "shape": [
+        298450,
+        24
+    ],
+    "columns": [
+        "id",
+        "latitude",
+        "longitude",
+        "location",
+        "vehicle_number",
+        "vehicle_type",
+        "description",
+        "violation_type",
+        "offence_code",
+        "created_datetime",
+        "closed_datetime",
+        "modified_datetime",
+        "device_id",
+        "created_by_id",
+        "center_code",
+        "police_station",
+        "data_sent_to_scita",
+        "junction_name",
+        "action_taken_timestamp",
+        "data_sent_to_scita_timestamp",
+        "updated_vehicle_number",
+        "updated_vehicle_type",
+        "validation_status",
+        "validation_timestamp"
+    ],
+    "missing_values": {
+        "location": 3041,
+        "description": 298450,
+        "closed_datetime": 298450,
+        "created_by_id": 5,
+        "center_code": 11260,
+        "police_station": 5,
+        "junction_name": 5,
+        "action_taken_timestamp": 298450,
+        "data_sent_to_scita_timestamp": 256289,
+        "updated_vehicle_number": 125254,
+        "updated_vehicle_type": 125254,
+        "validation_status": 125254,
+        "validation_timestamp": 125254
+    },
+    "dtypes": {
+        "id": "object",
+        "latitude": "float64",
+        "longitude": "float64",
+        "location": "object",
+        "vehicle_number": "object",
+        "vehicle_type": "object",
+        "description": "float64",
+        "violation_type": "object",
+        "offence_code": "object",
+        "created_datetime": "object",
+        "closed_datetime": "float64",
+        "modified_datetime": "object",
+        "device_id": "object",
+        "created_by_id": "object",
+        "center_code": "float64",
+        "police_station": "object",
+        "data_sent_to_scita": "bool",
+        "junction_name": "object",
+        "action_taken_timestamp": "float64",
+        "data_sent_to_scita_timestamp": "object",
+        "updated_vehicle_number": "object",
+        "updated_vehicle_type": "object",
+        "validation_status": "object",
+        "validation_timestamp": "object"
+    },
+    "column_details": {
+        "id": {
+            "unique_count": 298450,
+            "missing_count": 0,
+            "dtype": "object",
+            "sample_values": [
+                "FKID000000",
+                "FKID000001",
+                "FKID000002",
+                "FKID000003",
+                "FKID000004"
+            ]
+        },
+        "latitude": {
+            "unique_count": 177982,
+            "missing_count": 0,
+            "dtype": "float64",
+            "sample_values": [
+                "12.9255567",
+                "12.9054633",
+                "12.9254492",
+                "12.956521",
+                "12.9777667"
+            ],
+            "min": 12.8026667,
+            "max": 13.293684372967755,
+            "mean": 12.980801878709853
+        },
+        "longitude": {
+            "unique_count": 177378,
+            "missing_count": 0,
+            "dtype": "float64",
+            "sample_values": [
+                "77.618665",
+                "77.7007781",
+                "77.6185035",
+                "77.5186178",
+                "77.5805453"
+            ],
+            "min": 77.442553,
+            "max": 77.771735,
+            "mean": 77.60051221133006
+        },
+        "location": {
+            "unique_count": 10942,
+            "missing_count": 3041,
+            "dtype": "object",
+            "sample_values": [
+                "18th Main Road, Block 2, Koramangala, Bengaluru, Karnataka. Pin-560068 (India)",
+                "Sarjapura Main Road, The Grove, Janatha Colony, Doddakannelli, Bengaluru, Karnataka. Pin-560035 (India)",
+                "Koramangala 2nd Block, Kormangala West, Bengaluru South City Corporation, Bengaluru, Bangalore South, Bengaluru Urban, Karnataka, 560034, India",
+                "6th Cross Road, Manasa Layout, Nagarbhavi, Bengaluru, Karnataka. Pin-560072 (India)",
+                "Kalidasa Road, Gandhinagar, Nehru Nagar, Bengaluru Central City Corporation, Bengaluru, Bangalore North, Bengaluru Urban, Karnataka, 560009, India"
+            ]
+        },
+        "vehicle_number": {
+            "unique_count": 231890,
+            "missing_count": 0,
+            "dtype": "object",
+            "sample_values": [
+                "FKN00GL0000",
+                "FKN00GL0001",
+                "FKN00GL0002",
+                "FKN00GL0003",
+                "FKN00GL0004"
+            ]
+        },
+        "vehicle_type": {
+            "unique_count": 22,
+            "missing_count": 0,
+            "dtype": "object",
+            "sample_values": [
+                "CAR",
+                "SCOOTER",
+                "TANKER",
+                "PASSENGER AUTO",
+                "MOTOR CYCLE"
+            ]
+        },
+        "description": {
+            "unique_count": 0,
+            "missing_count": 298450,
+            "dtype": "float64",
+            "sample_values": [],
+            "min": NaN,
+            "max": NaN,
+            "mean": NaN
+        },
+        "violation_type": {
+            "unique_count": 991,
+            "missing_count": 0,
+            "dtype": "object",
+            "sample_values": [
+                "[\"WRONG PARKING\",\"PARKING NEAR ROAD CROSSING\"]",
+                "[\"NO PARKING\"]",
+                "[\"WRONG PARKING\",\"PARKING IN A MAIN ROAD\"]",
+                "[\"WRONG PARKING\"]",
+                "[\"WRONG PARKING\",\"NO PARKING\",\"PARKING NEAR BUSTOP/SCHOOL/HOSPITAL ETC\",\"DOUBLE PARKING\",\"PARKING OPPOSITE TO ANOTHER PARKED VEHICLE\",\"PARKING IN A MAIN ROAD\"]"
+            ]
+        },
+        "offence_code": {
+            "unique_count": 991,
+            "missing_count": 0,
+            "dtype": "object",
+            "sample_values": [
+                "[112,104]",
+                "[113]",
+                "[112,107]",
+                "[112]",
+                "[112,113,111,109,108,107]"
+            ]
+        },
+        "created_datetime": {
+            "unique_count": 94417,
+            "missing_count": 0,
+            "dtype": "object",
+            "sample_values": [
+                "2023-11-20 00:28:46+00",
+                "2023-11-24 22:46:46+00",
+                "2023-11-20 00:27:46+00",
+                "2023-11-16 06:47:46+00",
+                "2023-11-22 04:56:46+00"
+            ]
+        },
+        "closed_datetime": {
+            "unique_count": 0,
+            "missing_count": 298450,
+            "dtype": "float64",
+            "sample_values": [],
+            "min": NaN,
+            "max": NaN,
+            "mean": NaN
+        },
+        "modified_datetime": {
+            "unique_count": 298450,
+            "missing_count": 0,
+            "dtype": "object",
+            "sample_values": [
+                "2023-11-28 04:48:04.582978+00",
+                "2023-11-24 23:00:24.115257+00",
+                "2023-11-28 04:47:02.33776+00",
+                "2023-11-18 04:46:57.216868+00",
+                "2023-11-28 02:44:50.46737+00"
+            ]
+        },
+        "device_id": {
+            "unique_count": 3070,
+            "missing_count": 0,
+            "dtype": "object",
+            "sample_values": [
+                "FKDEV00000",
+                "FKDEV00001",
+                "FKDEV00002",
+                "FKDEV00003",
+                "FKDEV00004"
+            ]
+        },
+        "created_by_id": {
+            "unique_count": 2666,
+            "missing_count": 5,
+            "dtype": "object",
+            "sample_values": [
+                "FKUSR00000",
+                "FKUSR00001",
+                "FKUSR00002",
+                "FKUSR00003",
+                "FKUSR00004"
+            ]
+        },
+        "center_code": {
+            "unique_count": 52,
+            "missing_count": 11260,
+            "dtype": "float64",
+            "sample_values": [
+                "9.0",
+                "82.0",
+                "26.0",
+                "3.0",
+                "16.0"
+            ],
+            "min": 2.0,
+            "max": 88.0,
+            "mean": 23.02301263971587
+        },
+        "police_station": {
+            "unique_count": 54,
+            "missing_count": 5,
+            "dtype": "object",
+            "sample_values": [
+                "Madiwala",
+                "Bellandur",
+                "Byatarayanapura",
+                "Upparpet",
+                "Shivajinagar"
+            ]
+        },
+        "data_sent_to_scita": {
+            "unique_count": 2,
+            "missing_count": 0,
+            "dtype": "bool",
+            "sample_values": [
+                "True",
+                "False"
+            ],
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.8574066007706483
+        },
+        "junction_name": {
+            "unique_count": 169,
+            "missing_count": 5,
+            "dtype": "object",
+            "sample_values": [
+                "No Junction",
+                "BTP044 - Sagar Theatre Junction",
+                "BTP051 - Safina Plaza Junction",
+                "BTP205 - Modi Hospital Junction",
+                "BTP043 - Upparpet Junction"
+            ]
+        },
+        "action_taken_timestamp": {
+            "unique_count": 0,
+            "missing_count": 298450,
+            "dtype": "float64",
+            "sample_values": [],
+            "min": NaN,
+            "max": NaN,
+            "mean": NaN
+        },
+        "data_sent_to_scita_timestamp": {
+            "unique_count": 42161,
+            "missing_count": 256289,
+            "dtype": "object",
+            "sample_values": [
+                "2024-04-01 17:45:48.438875+00",
+                "2024-04-01 17:45:48.456546+00",
+                "2024-04-01 17:51:36.704312+00",
+                "2024-04-01 18:01:17.554447+00",
+                "2024-04-01 18:02:20.13201+00"
+            ]
+        },
+        "updated_vehicle_number": {
+            "unique_count": 143133,
+            "missing_count": 125254,
+            "dtype": "object",
+            "sample_values": [
+                "FKN00GL0000",
+                "FKN00GL0002",
+                "FKN00GL0003",
+                "FKN00GL0004",
+                "FKN00GL0005"
+            ]
+        },
+        "updated_vehicle_type": {
+            "unique_count": 22,
+            "missing_count": 125254,
+            "dtype": "object",
+            "sample_values": [
+                "MAXI-CAB",
+                "SCOOTER",
+                "TANKER",
+                "PASSENGER AUTO",
+                "CAR"
+            ]
+        },
+        "validation_status": {
+            "unique_count": 5,
+            "missing_count": 125254,
+            "dtype": "object",
+            "sample_values": [
+                "approved",
+                "rejected",
+                "processing",
+                "duplicate",
+                "created1"
+            ]
+        },
+        "validation_timestamp": {
+            "unique_count": 170115,
+            "missing_count": 125254,
+            "dtype": "object",
+            "sample_values": [
+                "2023-11-30 03:08:24.818+00",
+                "2023-11-30 03:08:56.998+00",
+                "2023-11-18 23:35:12.428+00",
+                "2023-11-30 03:11:32.796+00",
+                "2023-11-30 04:32:19.24+00"
+            ]
+        }
+    },
+    "duplicate_rows": 0
+}
