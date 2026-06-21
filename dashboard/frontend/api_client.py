@@ -1,7 +1,8 @@
+import os
 import requests
 import pandas as pd
 
-BASE_URL = "http://127.0.0.1:8000/api/v1"
+BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000/api/v1")
 
 def get_simulated_forecast(horizon_hours: int = 0):
     try:
