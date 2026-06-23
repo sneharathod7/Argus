@@ -92,17 +92,7 @@ class FoliumProvider(BaseMapProvider):
             </div>
             """
             
-            # Core marker
-            folium.CircleMarker(
-                location=[row['lat'], row['lng']],
-                radius=base_radius,
-                color=color,
-                fill=True,
-                fill_opacity=opacity,
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
-            
-            # Influence Radius for spillover visualization
+            # Influence Radius for spillover visualization (Draw FIRST so it sits underneath)
             if is_active:
                 influence_radius = base_radius * 2 * row.get('urgency_score', 0.5)
                 folium.CircleMarker(
@@ -113,6 +103,16 @@ class FoliumProvider(BaseMapProvider):
                     fill=True,
                     fill_opacity=0.15,
                 ).add_to(m)
+
+            # Core marker with Popup (Draw LAST so it sits on top and is clickable)
+            folium.CircleMarker(
+                location=[row['lat'], row['lng']],
+                radius=base_radius,
+                color=color,
+                fill=True,
+                fill_opacity=opacity,
+                popup=folium.Popup(popup_html, max_width=300)
+            ).add_to(m)
             
         st_folium(m, width="100%", height=600, returned_objects=[])
 
